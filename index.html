@@ -4,18 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevSunny Portfolio Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  <title>Sunny Mistry | Software Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <header class="header">
     <div class="logo">
-      <img src="img/devsunny.png" alt="">
+      <a href="#home">SM.</a>
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -23,103 +28,301 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
-
   </header>
 
-  <!-- Introduction -->
-  <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hi, I am <strong>Sunny Mistry</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro"> Software Engineer</p>
-    <img src="img/sunny.jpg" alt="a picture of Sunny smiling" class="intro__img">
-  </section>
-
-
-  <!-- My Services -->
-  <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Development</h3>
-        <p>Spent countless amount of hours developing projects for my classes
-          and contributed fully and collaborated with all team mates</p>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__content hidden">
+      <h2 class="hero__subtitle">Hi, I'm</h2>
+      <h1 class="hero__title">Sunny Mistry</h1>
+      <h3 class="hero__role">Software Engineer</h3>
+      <p class="hero__desc">Building scalable cloud-native solutions, AI-powered internal tools, and robust backend
+        systems.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#about" class="btn btn--secondary">More About Me</a>
       </div>
-
-      <div class="service">
-        <h3>Experience</h3>
-        <p>Advocated a safe and clean environment for children and young adults through shelf cleaning and
-          additional assistance. Completed up to 100 Hours. Maintained local parks, fostered natural
-          environment growth in planting trees, and raised awareness for a litter free city.</p>
-      </div>
-
-      <div class="service">
-        <h3>Extracurriculars</h3>
-        <p>Developed a working-class enrollment website overhaul for our university using Node.js, JavaScript,
-          Express, and Java in a 12-hour period.</p>
-      </div>
-    </div> <!-- / service -->
-
-    <a href="#work" class="btn">My Work</a>
-  </section>
-
-  <!-- About me -->
-  <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about">Developer based out of San Jose</p>
-
-    <div class="about-me__body">
-      <p>The Software Engineering program at San Jose State University has given me the strong fundamental skills such as data structures, algorithms, and programming languages needed for a Software Internship position. Other educational sites such
-        as Udacity have given me the extra growth I needed through learning strong understandable code that can be maintained easily alongside other engineering peers. Additionally, coding competitions and hackathons introduced me to working with a
-        team of engineers to produce a working project through strong technical communication in a restricted timeframe. Combined, the abilities I’ve acquired through my education time solidifies the quality of results and team contributions I can
-        make.</p>
-      <p>Aside from my technical abilities, my previous position as a Volunteer at the San Jose Public Library and the City of San Jose, I was able to draw important soft skills when working with a diverse group of people and work within the
-        standards of the establishment. I believe that these crucial experiences give me the strong working skills required such as working in a team and carefully planning each decision in this position. Working in various events and coordinating in
-        teams towards a common goal was essential in my past experiences. In turn, working in events and with others has provided me the necessary requirements in developing successful works.</p>
-    </div>
-
-    <img src="img/sitting.jpg" alt="Sunny standing" class="about-me__img">
-  </section>
-
-  <!-- My Work -->
-  <section class="my-work" id="work">
-    <h2 class="section__title section__title--work">My work</h2>
-    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-
-    <div class="portfolio">
-      <a href="https://github.com/Sunny4552/covid-vision" class="portfolio__item">
-        <img src="img/covidtracker.png" alt="" class="portfolio__img">
-      </a>
-
-      <a href="https://github.com/Sunny4552/animal-trading-card" class="portfolio__item">
-        <img src="img/animal.png" alt="" class="portfolio__img">
-      </a>
-
-      <a href="https://github.com/Sunny4552/wave-splash-projects" class="portfolio__item">
-        <img src="img/adventure.png" alt="" class="portfolio__img">
-      </a>
     </div>
   </section>
 
-  <!-- footer -->
-  <footer class="footer">
-    <a href="mailto:sunny.mistry@sjsu.edu" class="footer__link">sunny.mistry@sjsu.edu</a>
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <h2 class="section__title hidden">About Me</h2>
+    <div class="about__content glass-panel hidden">
+      <div class="split-layout" style="align-items: center;">
+        <div class="about__text">
+          <p>
+            Software Engineer with 3+ years of experience building backend systems, observability platforms, and
+            AI-powered internal tools at enterprise scale.
+          </p>
+          <p>
+            Passionate about cloud-native development and automation — with a focus on Python, Docker, and GCP —
+            I specialize in designing systems that are reliable, scalable, and maintainable.
+          </p>
+          <p>
+            I take pride in delivering work that creates real impact: from reducing platform costs and improving
+            incident response times, to building AI agents used daily by hundreds of teammates across engineering,
+            product, and operations.
+          </p>
+        </div>
+        <div class="about__img">
+          <img src="img/image.png" alt="Sunny Mistry - About Me">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience section" id="experience">
+    <h2 class="section__title hidden">Professional Experience</h2>
+
+    <div class="timeline">
+      <!-- Walmart -->
+      <div class="timeline__item hidden">
+        <div class="timeline__dot"></div>
+        <div class="glass-card">
+          <div class="card__header">
+            <h3>Walmart Global Tech</h3>
+            <span class="card__date">May 2024 – Present</span>
+          </div>
+          <h4 class="card__role">Software Engineer 3</h4>
+          <ul class="card__list">
+            <li>Designed and Developing an AI-powered agentic chatbot for handling requests within our Incident
+              Management Platform leveraging Python, Docker, Slack API, and LLMs (GPT, Claude) via LangChain used by
+              100+ users weekly.</li>
+            <li>Built and optimized Prometheus alerting for Walmart Payment Tenders, achieving 90% SLA coverage and
+              reducing undetected critical incidents by 40%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Walmart 2 -->
+      <div class="timeline__item hidden">
+        <div class="timeline__dot"></div>
+        <div class="glass-card">
+          <div class="card__header">
+            <h3>Walmart Global Tech</h3>
+            <span class="card__date">June 2022 – May 2024</span>
+          </div>
+          <h4 class="card__role">Software Engineer 2</h4>
+          <ul class="card__list">
+            <li>Drove the successful integration of Site Operations into Walmart's OmniTech organization by
+              standardizing documentation processes, runbooks, and operational workflows.</li>
+            <li>Consolidated and automated monitoring dashboards using Grafana and Spotlight, improving signal-to-noise
+              ratio in incident detection by 25%.</li>
+            <li>Reduced MTTR by 18% by correlating alerts to incident patterns in Splunk and Grafana, enabling proactive
+              response.</li>
+            <li>Lowered platform costs by over $10,000 through optimization of alert thresholds, retention policies, and
+              incident escalation paths.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pure UX -->
+      <div class="timeline__item hidden">
+        <div class="timeline__dot"></div>
+        <div class="glass-card">
+          <div class="card__header">
+            <h3>Pure UX</h3>
+            <span class="card__date">May 2021 – Aug 2021</span>
+          </div>
+          <h4 class="card__role">Software Engineering Intern</h4>
+          <ul class="card__list">
+            <li>Led a backend-focused intern team to design and deploy a design intelligence platform (Pure User Design
+              - PUD) to AWS, supporting real-time analytics and UI component performance insights.</li>
+            <li>Engineered scalable backend systems using Django and PostgreSQL to support user tracking, A/B testing
+              features, and performance visualizations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- IBM -->
+      <div class="timeline__item hidden">
+        <div class="timeline__dot"></div>
+        <div class="glass-card">
+          <div class="card__header">
+            <h3>IBM Accelerate</h3>
+            <span class="card__date">May 2021 – Jul 2021</span>
+          </div>
+          <h4 class="card__role">Software Talent Program Participant</h4>
+          <ul class="card__list">
+            <li>Selected as 1 of ~200 participants nationwide to join IBM’s elite software training cohort.</li>
+            <li>Completed hands-on modules in full-stack development, cloud security, and Agile project delivery.</li>
+            <li>Served as team lead during capstone project, coordinating deliverables for 8 team members using GitHub
+              and Slack.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <h2 class="section__title hidden">Technical Skills</h2>
+    <div class="skills__grid">
+      <div class="glass-card skill-group hidden">
+        <h3><i class="fa-solid fa-code"></i> Languages & Web Tech</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+          <span class="chip">C</span>
+          <span class="chip">JavaScript (Node.js)</span>
+          <span class="chip">React</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-group hidden" style="transition-delay: 100ms;">
+        <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+        <div class="chips">
+          <span class="chip">AWS</span>
+          <span class="chip">GCP</span>
+          <span class="chip">Docker</span>
+          <span class="chip">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-group hidden" style="transition-delay: 200ms;">
+        <h3><i class="fa-solid fa-chart-line"></i> Monitoring & Observability</h3>
+        <div class="chips">
+          <span class="chip">Prometheus</span>
+          <span class="chip">Grafana</span>
+          <span class="chip">Splunk</span>
+          <span class="chip">Spotlight</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-group hidden" style="transition-delay: 300ms;">
+        <h3><i class="fa-solid fa-robot"></i> AI/ML &amp; Tools</h3>
+        <div class="chips">
+          <span class="chip">YOLOv4</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">LLMs (GPT, Claude)</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">LangChain</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-group hidden" style="transition-delay: 400ms;">
+        <h3><i class="fa-solid fa-diagram-project"></i> Development Practices</h3>
+        <div class="chips">
+          <span class="chip">Agile</span>
+          <span class="chip">SDLC</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Microservices</span>
+          <span class="chip">Git</span>
+          <span class="chip">JIRA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <h2 class="section__title hidden">Featured Projects</h2>
+    <div class="projects__grid">
+
+      <!-- Smart Surgical Tray -->
+      <div class="glass-card project-card hidden">
+        <div class="project-card__img">
+          <img src="img/smart_surgical_tray_system.png" alt="Smart Surgical Tray System Dashboard">
+        </div>
+        <div class="project-card__content">
+          <h3>Smart Surgical Tray System</h3>
+          <p class="tag">Senior Capstone Project</p>
+          <p>Designed and developed a system leveraging computer vision to track surgical tool usage and predict future
+            requirements in real-time. Trained YOLOv4 on Raspberry Pi achieving 92% accuracy. Built UI in ReactJS with
+            Node.js backend.</p>
+          <a href="https://github.com/nguyenshana/smart-tray" class="btn btn--outline" target="_blank">View on
+            GitHub</a>
+        </div>
+      </div>
+
+      <!-- Note: the previous site had 3 images for github projects, we keep them as placeholders but modern style -->
+      <div class="glass-card project-card hidden" style="transition-delay: 100ms;">
+        <div class="project-card__img">
+          <img src="img/covidtracker.png" alt="Covid Vision Tracker">
+        </div>
+        <div class="project-card__content">
+          <h3>Covid Vision</h3>
+          <p>COVID-19 tracking application.</p>
+          <a href="https://github.com/Sunny4552/covid-vision" class="btn btn--outline" target="_blank">View on
+            GitHub</a>
+        </div>
+      </div>
+
+      <div class="glass-card project-card hidden" style="transition-delay: 200ms;">
+        <div class="project-card__img">
+          <img src="img/animal.png" alt="Animal Trading Card">
+        </div>
+        <div class="project-card__content">
+          <h3>Animal Trading Card</h3>
+          <p>Interactive web application.</p>
+          <a href="https://github.com/Sunny4552/animal-trading-card" class="btn btn--outline" target="_blank">View on
+            GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education & Awards Section -->
+  <section class="edu-awards section glass-panel hidden">
+    <div class="split-layout">
+      <div class="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="edu-item">
+          <h3>San Jose State University</h3>
+          <p><strong>B.S. in Software Engineering</strong> | GPA: 3.5</p>
+          <p class="date">2018 - 2022</p>
+        </div>
+        <div class="edu-item">
+          <h3>Udacity Nanodegree Programs</h3>
+          <ul>
+            <li>Full-Stack Developer (2021)</li>
+            <li>Intro to Programming (2019)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="awards">
+        <h2><i class="fa-solid fa-trophy"></i> Awards</h2>
+        <ul class="award-list">
+          <li><strong>Dean’s Scholar Award</strong> - 2022</li>
+          <li><strong>IBM Accelerate Certificate of Excellence</strong> - 2021</li>
+          <li><strong>Presidential Award for Educational Excellence</strong> - 2018</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <h2 class="footer__title">Let's Connect</h2>
+    <a href="mailto:sunnymistry78@yahoo.com" class="footer__link">sunnymistry78@yahoo.com</a>
     <ul class="social-list">
-      <li class="social-list__item"><a class="social-list__link" href="https://github.com/Sunny4552"><i class="fab fa-github"></i></a></li>
-      <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/sunny-mistry-0896aa167/"><i class="fab fa-linkedin"></i></a></li>
-      <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/profile.php?id=100002832916568"><i class="fab fa-facebook-square"></i></a></li>
-      <li class="social-list__item"><a class="social-list__link" href="https://www.youtube.com/channel/UCdXjVdJ2825fk-DORNOV2zQ"><i class="fab fa-youtube"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com/Sunny4552" target="_blank"><i
+            class="fa-brands fa-github"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com/in/sunnymistry11/"
+          target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
     </ul>
+    <p class="copyright">© 2026 Sunny Mistry. All rights reserved.</p>
   </footer>
 
-  <script src="js/index.js"></script>
 
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
-
